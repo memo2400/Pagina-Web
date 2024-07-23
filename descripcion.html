@@ -8,6 +8,89 @@
 
     <link rel="shortcut icon" href="halo_mcc_icon_249734.ico" type="image/x-icon">
 
+    <!-- Aqui pongo el Estilo -->
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(255, 252, 215), rgb(255, 252, 215));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #00568F;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {            
+            background-color: #e762db;
+            border-radius: 15px;
+        }
+
+        h1 {
+            background-color: #007ACC;
+            padding: 10px;
+            margin: 0;
+            color: #ffffff;
+        }    
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 0, 0);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #b7ddf6;
+        }
+
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 20px;
+            background-color: rgb(255, 237, 197);
+        }
+
+        .footer {
+            background-color: #003a61;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
 </head>
 
 
@@ -46,9 +129,32 @@
 
             </colgroup>
             <!-- Los th son los header de las columnas -->
-            <th></th>
-            <th>Primero</th>
-            <th>Segundo</th>
+            <th>Entrega</th>
+            <th>Año de lanzamiento</th>
+            <th>Plataforma</th>
+
+            <!-- alt + shif + down = copio y pego todo lo sellecionado -->
+             <!-- tr = seria el renglon -->
+            <tr>
+                <td>Combat envolved</td>
+                <td>2000</td>
+                <td>Xbox/PC</td>
+            </tr>
+            <tr>
+                <td>Halo 2</td>
+                <td>2005</td>
+                <td>Xbox/PC</td>
+            </tr>
+            <tr>
+                <td>Halo 3</td>
+                <td>2008</td>
+                <td>Xbox 360</td>
+            </tr>
+            <tr>
+                <td>Halo 4</td>
+                <td>2012</td>
+                <td>Xbox 360</td>
+            </tr>
 
         </table>
     </div>
