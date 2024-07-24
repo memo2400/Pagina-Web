@@ -8,6 +8,89 @@
 
     <link rel="shortcut icon" href="halo_mcc_icon_249734.ico" type="image/x-icon">
 
+    <!-- Estilos -->
+     <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, #abdcff, #d9f0ff);
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #00568F;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #5fb1e8;
+            border-radius: 15px;
+        }
+
+        h1 {
+            background-color: #007ACC;
+            padding: 10px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #003a61;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
 </head>
 
 
@@ -27,47 +110,59 @@
         </nav>
     </header>
     
-    <video src="assets/video/Halo 2 - Bungie Intro.mp4" autoplay muted></video>
-    <audio src="assets/audio/Stratovarius - Survive.mp3" autoplay controls=""></audio>
+    <!-- Clase centrado hace que se centren los elementos pero se tuvo que usar un Div para que funcionase -->
+    <nav class="centrado">
+        <video src="assets/video/Halo 2 - Bungie Intro.mp4" autoplay ></video>
+    </nav>
+
+    <nav class="centrado">
+        <audio src="assets/audio/Stratovarius - Survive.mp3" autoplay muted controls=""></audio>
+    </nav>
+
     
+    <hr>
+    <h2> Galeria de imagenes</h2>
+    <hr>
     <!-- vamo ha hacer una especie de tabla  -->
-    <section>
+    <section class="centrado">
         
         <!-- Si las imagens son punto jif las descarga mozilla -->
-        <div>
+        <div class="gallery">
             <a href="assets/imagenes/wallpaper-anillo-halo-cielo.jpg" target="_blank">
                 <img src="assets/imagenes/wallpaper-anillo-halo-cielo.jpg" width="600" >
             </a>
-            <div>Halo Cielo</div>
+            <div class="desc">Halo Cielo</div>
         </div>
 
-        <div>
+        <div class="gallery">
             <a href="assets/imagenes/halo-ring-wallpaper.jpg" target="_blank">
                 <img src="assets/imagenes/halo-ring-wallpaper.jpg" width="600" >
             </a>
-            <div>Paisaje</div>
+            <div class="desc">Paisaje</div>
         </div>
 
-        <div>
+        <div class="gallery">
             <a href="assets/imagenes/3077323.jpg" target="_blank">
                 <img src="assets/imagenes/3077323.jpg" width="600" >
             </a>
-            <div>Halo Infinite</div>
+            <div class="desc">Halo Infinite</div>
         </div>
 
-        <div>
+        <div class="gallery">
             <a href="assets/imagenes/halo3.jpg" target="_blank">
                 <img src="assets/imagenes/halo3.jpg" width="600" >
             </a>
-            <div>Halo 3</div>
+            <div class="desc">Halo 3</div>
         </div>
         
     </section>
 
 
-    <footer class="footer">
-        <p>Derechos reservados &copy; 2023</p>
-    </footer>
 </body>
+
+<!-- El footer solo se ve con barra negra simpre que agreguemos el estili de CSS -->
+<footer class="footer">
+    <p>Derechos reservados &copy; 2023</p>
+</footer>
 
 </html>
