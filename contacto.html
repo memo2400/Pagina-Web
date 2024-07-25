@@ -14,6 +14,7 @@
             background: linear-gradient(to right, #abdcff, #d9f0ff);
             padding: 10;
             margin: 10;
+            text-align: center;
         }
 
         header {
@@ -59,7 +60,7 @@
         input[type=email],
         textarea,
         select {
-            width: 100%;
+            width: 200px;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
@@ -95,6 +96,12 @@
             text-align: center;
             clear: both;
         }
+        .box {
+              border: 5px solid darkblue;
+              height: 150px;
+              width: 200px;
+        }
+
     </style>
 
 </head>
@@ -117,16 +124,20 @@
     </header>
     
     <div class="contenedor-formulario">
+    <!-- <div class="box"> -->
         <form>
             <label for="nombre">Nombre: </label>
             <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required minlength="3">
+            <br>
             <label for="apellido">Apellido: </label>
             <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" required>
             
+            <br>
             <label for="mail">Correo: </label>
             <input type="text" id="mail" name="mail" placeholder="Escriba su correro" required>
 
             <!-- Lista de paises -->
+            <br>
             <label for="pais">País: </label>
             <select name="pais" id="pais">
                 <option value="Argentina">Argentina</option>
@@ -135,16 +146,19 @@
                 <option value="Sudafrica">Sudafrica</option>
             </select>
 
+            <br>
             <!-- Area de texto -->
             <label for="comentario">Comentarios:</label>
             <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Escriba su comentario"></textarea>
 
+            <br>
             <!-- Radios -->
             <input type="radio" id="motivo" name="motivo"><i>Conocer más</i>
             <input type="radio" id="motivo" name="motivo"><i>Felicitaciones</i>
             <input type="radio" id="motivo" name="motivo"><i>Fines comerciales</i>
             <input type="radio" id="motivo" name="motivo"><i>Reclamo</i>
 
+            <br>
             <input type="submit" value="Enviar">
 
 
