@@ -27,6 +27,30 @@
         </nav>
     </header>
     
+    <div>
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" required>
+            
+            <label for="mail">Correo: </label>
+            <input type="text" id="mail" name="mail" placeholder="Escriba su correro">
+
+            <!-- Lista de paises -->
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Mexico">Mexico</option>
+                <option value="China">China</option>
+                <option value="Sudafrica">Sudafrica</option>
+            </select>
+
+            <label for="comentario">Comentarios:</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Escriba su comentario"></textarea>
+
+        </form>
+    </div>
 
     <footer>
         <p>Derechos reservados &copy; 2023</p>
