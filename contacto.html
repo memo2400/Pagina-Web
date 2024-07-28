@@ -85,15 +85,15 @@
             background-color: #4b9fd7;
         }
 
+        /* Esta seccion deja de usarse
         div.contenedor-formulario {
             border-radius: 5px;
             background-color: #f2f2f2;
-            padding: 20px;
-        }
+            padding: 20px;        
+        } */
 
         .footer {
             background-color: #333;
-            color: #FFF;
             padding: 10px;
             text-align: center;
             clear: both;
@@ -103,6 +103,10 @@
             border: 5px solid darkblue;
             height: 150px;
             width: 200px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;            
         }
     </style>
 
@@ -125,8 +129,9 @@
         </nav>
     </header>
 
-    <div class="contenedor-formulario">
-        <!-- <div class="box"> -->
+    <!-- <div class="contenedor-formulario"> -->
+    <!-- <div class="box"> -->
+    <div class="container">
         <form>
 
             <table>
@@ -143,7 +148,7 @@
 
                 <tr>
                     <td>
-                        <label for="apellido">Apellido: </label>            
+                        <label for="apellido">Apellido: </label>
                     </td>
                     <td>
                         <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" required>
@@ -157,14 +162,14 @@
                     </td>
                     <td>
                         <input type="text" id="mail" name="mail" placeholder="Escriba su correro" required>
-                    </td>                    
+                    </td>
                 </tr>
-                
-                
+
+
                 <!-- Lista de paises -->
                 <tr>
                     <td>
-                        <label for="pais">País: </label>                       
+                        <label for="pais">País: </label>
                     </td>
                     <td>
                         <select name="pais" id="pais">
@@ -175,15 +180,15 @@
                         </select>
                     </td>
                 </tr>
-                
-                <!-- Area de texto -->                            
+
+                <!-- Area de texto -->
                 <tr>
                     <td>
                         <label for="comentario">Comentarios:</label>
                     </td>
                     <td>
                         <textarea name="comentario" id="comentario" cols="30" rows="5"
-                        placeholder="Escriba su comentario"></textarea>
+                            placeholder="Escriba su comentario"></textarea>
                     </td>
                 </tr>
 
@@ -192,51 +197,44 @@
 
                     </td>
                     <td>
-                        
+                        <!-- Radios -->
+                        <fieldset>
+                            <legend>
+                                Motivo del contacto
+                            </legend>
+                            <p><input type="radio" id="motivo" name="motivo"><i>Conocer más</i></p>
+                            <p><input type="radio" id="motivo" name="motivo"><i>Felicitaciones</i></p>
+                            <p><input type="radio" id="motivo" name="motivo"><i>Fines comerciales</i></p>
+                            <p><input type="radio" id="motivo" name="motivo"><i>Reclamo</i></p>
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                    </td>
+                    <!-- enviar boton -->
+                    <td>
+                        <input type="submit" value="Enviar">
                     </td>
                 </tr>
             </table>
-                            
+
+
+            <br>
+
+
+            <br>
+
+            <br>
+
 
             <br>
             
 
-            <br>
 
-            <br>
-            <!-- Radios -->
-            <input type="radio" id="motivo" name="motivo"><i>Conocer más</i>
-            <input type="radio" id="motivo" name="motivo"><i>Felicitaciones</i>
-            <input type="radio" id="motivo" name="motivo"><i>Fines comerciales</i>
-            <input type="radio" id="motivo" name="motivo"><i>Reclamo</i>
-
-            <br>
-            <input type="submit" value="Enviar">
-
-
-        </form>
-
-        <form>
-            <fieldset>
-                <legend>Tamaño del zumo de fruta</legend>
-                <p>
-                    <input type="radio" name="size" id="size_1" value="small" />
-                    <label for="size_1">Pequeño</label>
-                </p>
-                <p>
-                    <input type="radio" name="size" id="size_2" value="medium" />
-                    <label for="size_2">Mediano</label>
-                </p>
-                <p>
-                    <input type="radio" name="size" id="size_3" value="large" />
-                    <label for="size_3">Grande</label>
-                </p>
-
-                <label for="mail">Correo: </label>
-                <input type="text" id="mail" name="mail" placeholder="Escriba su correro" required>
-
-            </fieldset>
-        </form>
+        </form>       
 
 
     </div>
