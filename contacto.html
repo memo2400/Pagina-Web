@@ -150,18 +150,43 @@
                     </td>
                 </tr>
 
+                <!-- Correos -->
                 <tr>
                     <td>
                         <label for="mail">Correo: </label>
-                    </td>                    
-                </tr>
-                
-                <tr>
+                    </td>
                     <td>
                         <input type="text" id="mail" name="mail" placeholder="Escriba su correro" required>
                     </td>                    
                 </tr>
                 
+                
+                <!-- Lista de paises -->
+                <tr>
+                    <td>
+                        <label for="pais">País: </label>                       
+                    </td>
+                    <td>
+                        <select name="pais" id="pais">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="China">China</option>
+                            <option value="Sudafrica">Sudafrica</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Area de texto -->                            
+                <tr>
+                    <td>
+                        <label for="comentario">Comentarios:</label>
+                    </td>
+                    <td>
+                        <textarea name="comentario" id="comentario" cols="30" rows="5"
+                        placeholder="Escriba su comentario"></textarea>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>
 
@@ -173,21 +198,10 @@
             </table>
                             
 
-            <!-- Lista de paises -->
             <br>
-            <label for="pais">País: </label>
-            <select name="pais" id="pais">
-                <option value="Argentina">Argentina</option>
-                <option value="Mexico">Mexico</option>
-                <option value="China">China</option>
-                <option value="Sudafrica">Sudafrica</option>
-            </select>
+            
 
             <br>
-            <!-- Area de texto -->
-            <label for="comentario">Comentarios:</label>
-            <textarea name="comentario" id="comentario" cols="30" rows="5"
-                placeholder="Escriba su comentario"></textarea>
 
             <br>
             <!-- Radios -->
